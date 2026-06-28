@@ -48,5 +48,90 @@ public class TiposVariaveis {
 
         float pi = 3.14f;
         System.out.println("Valor de pi: " + pi);
+
+        char letra = 'A';
+        System.out.println("Letra: " + letra);
+
+        // Tipos de referência em Java
+        // exemplos de tipos de referência: String, Arrays, Classes, Interfaces
+
+        String nome = "João";
+        System.out.println("Nome: " + nome);
+
+        int[] numeros = {1, 2, 3, 4, 5};
+        System.out.println("Números: " + java.util.Arrays.toString(numeros));
+
+        // Exemplo de classe
+        class Pessoa {
+            String nome;
+            int idade;
+
+            Pessoa(String nome, int idade) {
+                this.nome = nome;
+                this.idade = idade;
+            }
+
+            void apresentar() {
+                System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+            }
+        }
+
+        Pessoa pessoa = new Pessoa("Maria", 28);
+        pessoa.apresentar();
+
     }
+
+    // Exemplo de interface
+    interface Animal {
+        void fazerSom();
+
+    }
+
+    // Implementação da interface
+    class Cachorro implements Animal {
+        public void fazerSom() {
+            System.out.println("Au Au!");
+        }
+    }
+
+    // Exemplo de uso da interface
+    public void demonstrarInterface() {
+        Animal cachorro = new Cachorro();
+        cachorro.fazerSom();
+    }
+
+    // Exemplo de uso de arrays
+    public void demonstrarArrays() {
+        int[] numeros = {1, 2, 3, 4, 5};
+        System.out.println("Números: " + java.util.Arrays.toString(numeros));
+    }
+
+    // Exemplo de uso de Strings
+    public void demonstrarStrings() {
+        String saudacao = "Olá, Mundo!";
+        System.out.println(saudacao);
+    }
+
+    // Exemplo de super classe e subclasse
+    class AnimalSuper {
+        void fazerSom() {
+            System.out.println("Animal fazendo som");
+        }
+    }
+
+    class Gato extends AnimalSuper {
+        void fazerSom() {
+            System.out.println("Miau!");
+        }
+    }
+
+    // Exemplo de polimorfismo
+    public void demonstrarPolimorfismo() {
+        AnimalSuper animal = new Gato();
+        animal.fazerSom(); // Saída: Miau!
+    }
+
+    
+
+
 }
