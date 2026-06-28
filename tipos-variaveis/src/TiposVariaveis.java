@@ -131,7 +131,66 @@ public class TiposVariaveis {
         animal.fazerSom(); // Saída: Miau!
     }
 
+    // Exemplo de encapsulamento
+    class PessoaEncapsulada {
+        private String nome;
+        private int idade;
+
+        public String getNome() {
+            return nome;
+        }
+
+        public void setNome(String nome) {
+            this.nome = nome;
+        }
+
+        public int getIdade() {
+            return idade;
+        }
+
+        public void setIdade(int idade) {
+            this.idade = idade;
+        }
+    }
+
+    // Exemplo de uso de encapsulamento
+    public void demonstrarEncapsulamento() {
+        PessoaEncapsulada pessoa = new PessoaEncapsulada();
+        pessoa.setNome("Carlos");
+        pessoa.setIdade(35);
+        System.out.println("Nome: " + pessoa.getNome() + ", Idade: " + pessoa.getIdade());
+    }
+
+    // Exemplo de uso de herança
+    class Veiculo {
+        void mover() {
+            System.out.println("Veículo se movendo");
+        }
+    }
+
+    class Carro extends Veiculo {
+        void mover() {
+            System.out.println("Carro se movendo");
+        }
+    }
+
+    // Exemplo de uso de herança
+    public void demonstrarHeranca() {
+        Veiculo veiculo = new Carro();
+        veiculo.mover(); // Saída: Carro se movendo
+    }
+
+    // Exemplo de uso de POO
+
+    public void demonstrarPOO() {
+        demonstrarPolimorfismo();
+        demonstrarEncapsulamento();
+        demonstrarHeranca();
+    }
+
     
+
+
 
 
 }
