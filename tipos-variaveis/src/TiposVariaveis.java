@@ -17,7 +17,7 @@ public class TiposVariaveis {
         int anoFabricacao = 2020;
         System.out.println("Ano de fabricação: " + anoFabricacao);
 
-        double salarioMensal = 2500.50;
+        double salarioMensal = 7500.50;
         System.out.println("Salário mensal: " + salarioMensal);
 
         long populacaoMundial = 7800000000L;
