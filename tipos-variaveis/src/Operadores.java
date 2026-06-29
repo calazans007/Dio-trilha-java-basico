@@ -115,7 +115,7 @@ public class Operadores {
         // Tipos de operadores lógicos: && (AND), || (OR), ! (NOT)
 
         if (( x+ 5 > 8) && (y+5 < 3)){
-            
+
             System.out.println("A condição é verdadeira");
         } else {
             System.out.println("A condição não é verdadeira");
