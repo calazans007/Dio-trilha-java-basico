@@ -10,7 +10,7 @@ public class TiposVariaveis {
         // variáveis são declaradas com a palavra-chave var e podem ser alteradas posteriormente
         int idade = 25; // Variável
 
-        int idade2 = 30; // Variável
+        int idade27 = 30; // Variável
 
         idade = 26; // Alterando o valor da variável idade
 
