@@ -28,7 +28,7 @@ public class TiposVariaveis {
         byte idadeByte = 127;
         System.out.println("Idade (byte): " + idadeByte);
 
-        int idade = 127;
+        int idade5 = 127;
         System.out.println("Idade: " + idade);
 
         double altura = 1.75;
