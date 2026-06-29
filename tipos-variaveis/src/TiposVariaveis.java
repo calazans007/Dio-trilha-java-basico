@@ -52,6 +52,12 @@ public class TiposVariaveis {
         char letra = 'A';
         System.out.println("Letra: " + letra);
 
+
+
+
+
+        
+
         // Tipos de referência em Java
         // exemplos de tipos de referência: String, Arrays, Classes, Interfaces
 
@@ -188,7 +194,7 @@ public class TiposVariaveis {
         demonstrarHeranca();
     }
 
-    
+
 
 
 
