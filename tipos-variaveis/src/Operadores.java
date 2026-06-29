@@ -60,9 +60,68 @@ public class Operadores {
         int numeroNegativo = -numero; // operador unário negativo
         System.out.println("Número positivo: " + numeroPositivo);
         System.out.println("Número negativo: " + numeroNegativo);
-        
+        boolean variavelBoolean = true;
+        System.out.println("Variável booleana original: " + variavelBoolean);
+        System.out.println(!variavelBoolean); // operador unário NOT
+
+        variavelBoolean = !variavelBoolean; // operador untitário NOT
+        System.out.println("Variável booleana após NOT: " + variavelBoolean);
 
 
+
+        // Exemplo de operadores ternários
+        // O operador ternário é uma forma concisa de expressar uma condição if-else em uma única linha. Ele tem a seguinte sintaxe:
+        // condição ? valor_se_verdadeiro : valor_se_falso;
+
+        int idade = 20;
+        String resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+        System.out.println("Resultado do operador ternário: " + resultado);
+
+        int a1, b1;
+        a1 = 10;
+        b1 = 20;
+        String resultado1 = "";
+
+        if (a1 > b1) {
+            resultado1 = "a1 é maior que b1";
+        } else {
+            resultado1 = "b1 é maior que a1";
+            System.out.println("Resultado do if-else: " + resultado1);
+        }
+
+
+        String resultado2 = (a1 > b1) ? "a1 é maior que b1" : "b1 é maior que a1";
+        System.out.println("Resultado do operador ternário: " + resultado2);
+        int maior = (a1 > b1) ? a1 : b1;
+        System.out.println("O maior valor é: " + maior);
+
+
+        // Exemplo de operadores relacionais e lógicos combinados
+
+
+        // Tipos de operadores relacionais: >, <, >=, <=, ==, !=
+        int x = 10;
+        int y = 20;
+        boolean resultado3 = (x > 5) && (y < 30); // operador AND
+        System.out.println("Resultado do operador AND: " + resultado3);
+
+        if ((x > 5) && (y < 30)) {
+            System.out.println("x é maior que 5 e y é menor que 30");
+        } else {
+            System.out.println("A condição não é verdadeira");
+        }
+
+
+        // Tipos de operadores lógicos: && (AND), || (OR), ! (NOT)
+
+        if (( x+ 5 > 8) && (y+5 < 3)){
+            
+            System.out.println("A condição é verdadeira");
+        } else {
+            System.out.println("A condição não é verdadeira");
+        }
 
     }
+
+
 }
