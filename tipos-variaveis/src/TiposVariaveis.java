@@ -56,7 +56,7 @@ public class TiposVariaveis {
 
 
 
-        
+
 
         // Tipos de referência em Java
         // exemplos de tipos de referência: String, Arrays, Classes, Interfaces
@@ -180,11 +180,14 @@ public class TiposVariaveis {
         }
     }
 
+
+
     // Exemplo de uso de herança
     public void demonstrarHeranca() {
         Veiculo veiculo = new Carro();
         veiculo.mover(); // Saída: Carro se movendo
     }
+
 
     // Exemplo de uso de POO
 
@@ -197,6 +200,29 @@ public class TiposVariaveis {
 
 
 
+    //O que são construtores em Java?
+    // Construtores são métodos especiais usados para inicializar objetos de uma classe. Eles têm o mesmo nome da classe e não possuem tipo de retorno.
+
+    class PessoaConstrutor {
+        String nome;
+        int idade;
+
+        // Construtor
+        PessoaConstrutor(String nome, int idade) {
+            this.nome = nome;
+            this.idade = idade;
+        }
+
+        void apresentar() {
+            System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+        }
+    }
+
+    // Exemplo de uso de construtores
+    public void demonstrarConstrutores() {
+        PessoaConstrutor pessoa = new PessoaConstrutor("Ana", 22);
+        pessoa.apresentar();
+    }
 
 
 }
